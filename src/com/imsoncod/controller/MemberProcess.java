@@ -16,7 +16,7 @@ public class MemberProcess extends HttpServlet{
 		String uri = request.getRequestURI();
 		//System.out.println("uri = " + uri);
 		
-		//uri¸¦ ¸í·É¾î ºÎºĞ¸¸ Àß¶ó³¿
+		//urië¥¼ ëª…ë ¹ì–´ ë¶€ë¶„ë§Œ ì˜ë¼ëƒ„
 		String command = uri.substring(uri.lastIndexOf("/")+1, uri.lastIndexOf(".do"));
 		if(command != null && command.trim().equals("register")) {
 			
